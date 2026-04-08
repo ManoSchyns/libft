@@ -6,6 +6,8 @@ void *ft_calloc(size_t nmemb, size_t size)
     unsigned char *work;
     size_t i;
 
+    if (nmemb != 0 && size > SIZE_MAX / nmemb)
+        return (NULL);
     i = 0;
     dest = malloc(nmemb * size);
     if (dest == NULL)

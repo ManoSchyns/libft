@@ -3,6 +3,7 @@
 
 #include <strings.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 int ft_atoi(const char *nptr);
 void    ft_bzero(void *s, size_t n);
