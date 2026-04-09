@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void ft_substr_test(char const *s, unsigned int start,
+static void ft_substr_test(char const *s, unsigned int start,
 size_t len, char const *excpected)
 {
     char *result;

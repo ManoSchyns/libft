@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void ft_strjoin_test(char const *s1, char const *s2,
+static void ft_strjoin_test(char const *s1, char const *s2,
 char const *excpected)
 {
     char *result;

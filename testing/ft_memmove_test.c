@@ -38,7 +38,7 @@ static void test_memmove(const void *src, size_t n)
     free(dest2);
 }
 
-void test_same_buffer_memmove(void)
+static void test_same_buffer_memmove(void)
 {
     //chevauchement a droite
     char buf1[] = "abcdef";
