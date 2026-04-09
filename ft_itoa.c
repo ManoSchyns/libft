@@ -18,7 +18,7 @@ static int	get_size(long n)
 	return (count);
 }
 
-void	full_str(char *dest, long nb, int len, int sign)
+static void	full_str(char *dest, long nb, int len, int sign)
 {
 	dest[len] = '\0';
 	len --;
