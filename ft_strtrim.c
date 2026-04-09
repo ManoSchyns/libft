@@ -1,52 +1,52 @@
 #include "libft.h"
 
-static int is_in_set(char c, char const *set)
+static int	is_in_set(char c, char const *set)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if (set == NULL)
-        return (0);
-    while (set[i] != '\0')
-    {
-        if (set[i] == c)
-            return (1);
-        i ++;
-    }
-    return (0);
+	i = 0;
+	if (set == NULL)
+		return (0);
+	while (set[i] != '\0')
+	{
+		if (set[i] == c)
+			return (1);
+		i ++;
+	}
+	return (0);
 }
 
-static void ft_copy_in(char *dest, char const *src, int start, int end)
+static void	ft_copy_in(char *dest, char const *src, int start, int end)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (start < end)
-    {
-        dest[i] = src[start];
-        i ++;
-        start ++;
-    }
-    dest[i] = '\0';
+	i = 0;
+	while (start < end)
+	{
+		dest[i] = src[start];
+		i ++;
+		start ++;
+	}
+	dest[i] = '\0';
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    int start;
-    int end;
-    char *dest;
+	int		start;
+	int		end;
+	char	*dest;
 
-    if (s1 == NULL)
-        return (NULL);
-    start = 0;
-    while (s1[start] != '\0' && is_in_set(s1[start], set))
-        start ++;
-    end = ft_strlen(s1);
-    while (end > start && is_in_set(s1[end - 1], set))
-        end --;
-    dest = malloc((end - start + 1) * sizeof(char));
-    if (dest == NULL)
-        return (NULL);
-    ft_copy_in(dest, s1, start, end);
-    return (dest);
+	if (s1 == NULL)
+		return (NULL);
+	start = 0;
+	while (s1[start] != '\0' && is_in_set(s1[start], set))
+		start ++;
+	end = ft_strlen(s1);
+	while (end > start && is_in_set(s1[end - 1], set))
+		end --;
+	dest = malloc((end - start + 1) * sizeof(char));
+	if (dest == NULL)
+		return (NULL);
+	ft_copy_in(dest, s1, start, end);
+	return (dest);
 }
