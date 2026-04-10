@@ -7,6 +7,8 @@ De plus je vous conseille de faire vos propres tests par vous même.
 Les faires nous apprend beaucoup. Faire les fonctions demandé est une chose. 
 Les testers en est une autre.
 
+->Les tests sur les listes sont très basique. Ils s'arretent a lstadd_back.
+
 ===> Fin du Disclaimeur <=== 
 
 Pour lancer les tests souhaités.

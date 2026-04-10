@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void ft_lstnew_test(void *content)
+static void ft_lstnew_test(void *content)
 {
 	t_list *elem;
 
