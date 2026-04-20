@@ -21,7 +21,7 @@ To create this library, we are asked to create all the functions and a Makefile 
 
 *cc -Wall -Wextra -Werror program.c -L. -lft*
 
-**pogram is your progam name, it could be main.c, as you want.**
+**Pogram is your progam name, it could be main.c, as you want.**
 
 ## Resources
 - Tutoriel Makefile : https://borntocode.fr/creer-un-makefile-pour-son-projet/
