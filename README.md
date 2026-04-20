@@ -15,17 +15,17 @@ To create this library, we are asked to create all the functions and a Makefile 
 
 *make*
 
-**You would have a file libft.a**
+**You would have a file libft.a. You have to include the header "libft.h" in your c file.**
 
 **You can now compile your own program with :**
 
 *cc -Wall -Wextra -Werror program.c -L. -lft*
 
-**Pogram is your progam name, it could be main.c, as you want.**
+**Pogram is your program name, it could be main.c, as you want.**
 
 ## Resources
 - Tutoriel Makefile : https://borntocode.fr/creer-un-makefile-pour-son-projet/
-- Documantation for README: https://www.ionos.fr/digitalguide/sites-internet/developpement-web/fichier-readme/
+- Documentation for README: https://www.ionos.fr/digitalguide/sites-internet/developpement-web/fichier-readme/
 - What is a library : https://perso.ens-lyon.fr/frederic.vivien/Enseignement/PPP-2001-2002/LibDyn.pdf
 - More about linked list : https://www.geeksforgeeks.org/c/linked-list-in-c/
 
