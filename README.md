@@ -120,19 +120,25 @@ AI (ChatGPT) was used to:
 *Counts the number of nodes in the list.*
 
 - ft_lstlast
+
 *Returns the last node of the list.*
 
 - ft_lstadd_back
+
 *Adds the node ’new’ at the end of the list.*
 
 - ft_lstdelone
+
 *Takes a node as parameter and frees its content using the function ’del’. Frees the node itself but does NOT free the next node.*
 
 - ft_lstclear
+
 *Deletes and frees the given node and all its successors, using the function ’del’ and free(3). Finally, set the pointer to the list to NULL.*
 
 - ft_lstiter
+
 *Iterates through the list ’lst’ and applies the function ’f’ to the content of each node.*
 
 - ft_lstmap
+
 *Iterates through the list ’lst’, applies the function ’f’ to each node’s content, and creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of a node if needed.*
