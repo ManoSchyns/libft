@@ -1,7 +1,7 @@
-### *This activity has been created as part of the 42 curriculum by mschyns*
+*This activity has been created as part of the 42 curriculum by mschyns*
 
 ## Description
-This projet is a static library of some standard fonctions in c.
+This project is a static library of some standard functions in c.
 The functions to append in the library are given by 42.
 
 To create this library, we are asked to create all the functions and a Makefile that will compile and create the static library.
@@ -11,7 +11,17 @@ To create this library, we are asked to create all the functions and a Makefile 
 
 git clone git@github.com:42learners/Common-Core---Libft-78d77da9-5d6e-4920-b475-05b444058d82.git
 
+cd Common-Core---Libft-78d77da9-5d6e-4920-b475-05b444058d82
+
 make
+
+**You would have a file libft.a**
+
+**You can now compile your own program with :**
+
+cc -Wall -Wextra -Werror program.c -L. -lft
+
+**pogram is your progam name, it could be main.c, as you want.**
 
 ## Resources
 - Tutoriel Makefile : https://borntocode.fr/creer-un-makefile-pour-son-projet/
@@ -19,10 +29,13 @@ make
 - What is a library : https://perso.ens-lyon.fr/frederic.vivien/Enseignement/PPP-2001-2002/LibDyn.pdf
 - More about linked list : https://www.geeksforgeeks.org/c/linked-list-in-c/
 
-## Descritpion of the library
+AI (ChatGPT) was used to:
+- correct English grammar of the README.md
+
+## Description of the library
 **This library contains :**
 
-The man's functions prefixed by ft_ : 
+### *The man functions prefixed by ft_ :* 
 - isalpha
 - isdigit
 - isalnum
@@ -47,6 +60,7 @@ The man's functions prefixed by ft_ :
 - calloc
 - strdup
 
+### *Additionnal functions*
 - ft_substr
 
 *Allocates (with malloc(3)) and returns a substring from the string ’s’.The substring begins at index ’start’ and is of maximum size ’len’.*
@@ -109,4 +123,46 @@ followed by a newline.
 
 Outputs the integer ’n’ to the given file descriptor.
 
--
+### *Linked list functions*
+
+- ft_lstnew
+
+Allocates memory (using malloc(3)) and returns a new
+node. The ’content’ member variable is initialized
+with the given parameter ’content’. The variable
+’next’ is initialized to NULL.
+
+- ft_lstadd_front
+
+Adds the node ’new’ at the beginning of the list.
+
+- ft_lstsize
+
+Counts the number of nodes in the list.
+
+- ft_lstlast
+Returns the last node of the list.
+
+- ft_lstadd_back
+Adds the node ’new’ at the end of the list.
+
+- ft_lstdelone
+Takes a node as parameter and frees its content using
+the function ’del’. Frees the node itself but does
+NOT free the next node.
+
+- ft_lstclear
+Deletes and frees the given node and all its
+successors, using the function ’del’ and free(3).
+Finally, set the pointer to the list to NULL.
+
+- ft_lstiter
+Iterates through the list ’lst’ and applies the
+function ’f’ to the content of each node.
+
+- ft_lstmap
+Iterates through the list ’lst’, applies the function
+’f’ to each node’s content, and creates a new list
+resulting of the successive applications of the
+function ’f’. The ’del’ function is used to delete
+the content of a node if needed.
