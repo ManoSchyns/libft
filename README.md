@@ -11,7 +11,7 @@ To create this library, we are asked to create all the functions and a Makefile 
 
 *git clone git@github.com:42learners/Common-Core---Libft-78d77da9-5d6e-4920-b475-05b444058d82.git*
 
-*cd Common-Core---Libft-78d77da9-5d6e-4920-b475-05b444058d82*
+*cd Common-Core---Libft-78d77da9-5d6e-4920-b475-05b444058d82/*
 
 *make*
 
